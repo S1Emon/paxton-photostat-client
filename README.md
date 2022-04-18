@@ -1,3 +1,23 @@
+# Project Name: Paxton Photostat
+Live site: 
+
+#What I done in this project
+*I used react app
+*Used css frame work as react-bootstrap
+*I did the site responsive
+*Made it simple
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
