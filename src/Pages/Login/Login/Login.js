@@ -42,7 +42,6 @@ const Login = () => {
         navigate('/register')
     }
 
-
     const resetPassword = async () => {
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
