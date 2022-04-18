@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Wedding Photography",
+        "price": 125,
+        "details": "Wedding photography is the nuanced art of capturing one of the most important days in a person's life. We create unique, everlasting memories that families treasure for a lifetime. It is indispensable to the newlyweds' grander theme of romance.",
+        "img": "images/services/service1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Fashion Photography",
+        "price": 112,
+        "details": "Fashion photography focuses on the display of fashion clothing and items. It is most common on advertising boards and in fashion magazines. The photography will usually feature models wearing the display items. Fashion photography has existed almost as long as photography itself has been around.",
+        "img": "images/services/service2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Sports Photography",
+        "price": 135,
+        "details": "Sports photography is the capture of sports, games, exercises, and other activities through photography. The word “sports photography” encompasses a wide range of activities. It has a connection to photojournalism as well as vernacular (everyday life) photography.",
+        "img": "images/services/service3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Family Photography",
+        "price": 105,
+        "details": "Family photography is a type of photography that captures people and individuals in a family, which can include parents, their children, grandchildren, aunts, uncles, and cousins. For capture a best moment.",
+        "img": "images/services/service4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Portrait Photography",
+        "price": 115,
+        "details": "Portrait photography, or portraiture, is a type of photography aimed toward capturing the personality of a person or group of people by using effective lighting, backdrops, and poses. A portrait photograph may be artistic or clinical.",
+        "img": "images/services/service5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Travel Photography",
+        "price": 175,
+        "details": "A travel photo as an image that expresses the feeling of a time and place, portrays a land, its people, or a culture in its natural state, and has no geographical limitations. Travel photography as a genre is one of the most open in terms of the subjects it covers.",
+        "img": "images/services/service6.jpg"
+    }
+]

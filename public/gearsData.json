@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Nikon D6",
+        "details": "20.8MP FX-Format CMOS Sensor EXPEED 6, Image Processor Multi-CAM 37K 105-Pt. All Cross-Type AF 14 fps Shooting, Extended ISO 3280000",
+        "img": "images/gears/camera1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sony A1",
+        "details": "FE 12-24mm f/2.8 GM Lens, VG-C4EM Vertical Grip, 2x Memory Cards, Image Processor Multi-CAM",
+        "img": "images/gears/camera2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Canon EOS R5 C",
+        "details": "EOS R5 C Mirrorless Cinema Camera, Canon RF 24-105mm f/4L IS USM Lens,Two Cameras in,One Body: Photo + Cinema,RF-Mount Lens Covers Full-Frame Format.",
+        "img": "images/gears/camera3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Canon RF 70-200mm f/2.8",
+        "details": "RF-Mount Lens/Full-Frame Format, Aperture Range: f/2.8 to f/32, One Super UD Element, One UD Element, Two Aspherical Elements",
+        "img": "images/gears/lense1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Sony FE 70-200mm f/2.8 GM",
+        "details": "E-Mount Lens/Full-Frame Format, Aperture Range: f/2.8 to f/22, One XA Element & Two Aspherical Elements, Four ED Elements & Two Super ED Elements",
+        "img": "images/gears/lense2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Olympus M.Zuiko Digital ED",
+        "details": "Micro Four Thirds System, 300-800mm (35mm Equivalent), Aperture Range: f/4.5 to f/22, Built-In 1.25x Teleconverter",
+        "img": "images/gears/lense3.jpg"
+    }
+]
