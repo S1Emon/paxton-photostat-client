@@ -6,8 +6,8 @@ import './Services.css'
 const Services = () => {
     const [services, setServices] = useServices()
     return (
-        <div className='container'>
-            <h1 className='text-primary text-center mb-4 mt-5'>My Services</h1>
+        <div id='services' className='container'>
+            <h1 className='text-primary text-center mt-5'>My Services</h1>
             <div className='services-container'>
                 {
                     services?.map(service => <Service

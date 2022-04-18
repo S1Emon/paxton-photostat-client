@@ -6,8 +6,8 @@ const Gears = () => {
     const [gears, setGears] = useGears();
     console.log(gears);
     return (
-        <div className='container'>
-            <h1 className='text-primary text-center mt-5'>My Gears</h1>
+        <div id='gears' className='container'>
+            <h1 className='text-primary text-center mt-5 mb-0'>My Gears</h1>
             <div className='row'>
                 {
                     gears?.map(gear => <Gear
