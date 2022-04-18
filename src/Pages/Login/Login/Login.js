@@ -3,7 +3,9 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -21,7 +23,9 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    if (loading) {
+        return <Loading></Loading>
+    }
     let errorElement;
     if (error) {
         errorElement =
@@ -44,8 +48,13 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Mail sent')
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent mail')
+        }
+        else {
+            toast('Please enter your email address');
+        }
     }
 
     return (
@@ -65,9 +74,11 @@ const Login = () => {
                 </Button>
                 {errorElement}
                 <p className='mt-3'>New to Paxton? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
-                <p className='mt-3'>Forget Password? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
+
+                <p className='mt-3'>Forget Password? <button className='text-primary btn btn-link text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
             </Form>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };
