@@ -9,7 +9,7 @@ const Gear = ({ gear }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{details}</p>
-                    <button className='btn btn-dark'>Buy Now</button>
+                    <button className='btn btn-dark'>View Details</button>
                 </div>
             </div>
         </div>
