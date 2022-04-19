@@ -1,6 +1,6 @@
 Project Name:
 # Paxton Photostat
-Live site: 
+Live site: https://paxton-photostat.web.app/
 
 #What I done in this project
 
