@@ -20,7 +20,7 @@ const Checkout = () => {
                     <Form.Control as="textarea" rows={3} required />
                 </Form.Group>
 
-                <Link className='btn btn-primary' to='/'>Submit</Link>
+                <Link className='btn btn-primary' to='/checkoutmsg'>Submit</Link>
 
             </Form>
         </div>

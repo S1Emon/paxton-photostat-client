@@ -4,12 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { updateProfile } from 'firebase/auth';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
-
-    const [agree, setAgree] = useState();
-
+    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -17,11 +15,15 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    const [upateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
     const navigateLogin = () => {
         navigate('/login')
+    }
+
+    if (loading || updating) {
+        return <Loading></Loading>
     }
 
     const handleRegister = async (event) => {
@@ -30,13 +32,13 @@ const Register = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        alert('Updated profile');
+        console.log('Updated profile');
+
     }
     if (user) {
-        navigate('/home')
+        console.log('user', user);
     }
 
 
@@ -60,13 +62,11 @@ const Register = () => {
                     <Form.Control type="password" name='password' placeholder="Password" required />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" name='terms' label="Accept terms & condition" />
-                </Form.Group>
-
-                <Button variant="primary" type="submit" disabled={!agree} >
-                    Register
-                </Button>
+                <div>
+                    <input onClick={() => setAgree(!agree)} type="checkbox" name="checkbox" id="terms" />
+                    <label className={`ps-2 ${agree ? 'text-success' : 'text-danger'}`} htmlFor="checkbox">Accept terms & conditions</label>
+                </div>
+                <input disabled={!agree} className="btn btn-primary mt-2" type="submit" value="Register" />
                 <p className='mt-3'>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             </Form>
             <SocialLogin></SocialLogin>

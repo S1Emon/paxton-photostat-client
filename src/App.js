@@ -1,8 +1,11 @@
+import React, { Component } from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
+import CheckoutMsg from './Pages/Checkout/CheckoutMsg/CheckoutMsg';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
@@ -29,6 +32,7 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+        <Route path='/checkoutmsg' element={<CheckoutMsg></CheckoutMsg>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
