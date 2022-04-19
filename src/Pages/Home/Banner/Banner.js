@@ -21,8 +21,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>You're my person, forever.</h3>
+                    <p>I hope my real wedding is as beautiful and organized as my Paxton one.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -33,8 +33,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='text-dark'>Now we can hang out forever!</h3>
+                    <p className='text-dark'>The love you feel towards you is an eternal and never-ending journey...</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -45,9 +45,9 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    <h3 className='text-dark'>All of my smiles start with you.</h3>
+                    <p className='text-dark'>
+                        Mark this day in a calendar as a special one—I'm getting a best click!
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
